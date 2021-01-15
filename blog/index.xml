@@ -1,0 +1,30 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modelix – News about Modelix</title>
+    <link>/blog/</link>
+    <description>Recent content in News about Modelix on Modelix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: Modelix goes Open Source</title>
+      <link>/blog/2020/12/03/modelix-goes-open-source/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/12/03/modelix-goes-open-source/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
