@@ -26,5 +26,27 @@
       </description>
     </item>
     
+    <item>
+      <title>Blog: Modelix in the MPS Talk Series</title>
+      <link>/blog/2020/12/03/modelix-in-the-mps-talk-series/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020/12/03/modelix-in-the-mps-talk-series/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Modelix came public for one of the very first time last February in the first virtual MPS Talk Series organized by Jetbrains
+and itemis. In one of the most antecipated talks Sascha Lisson gave us an overview of Modelix and its capabilities.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZFPgRNsEfgU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;other-recordings&#34;&gt;Other Recordings&lt;/h2&gt;
+&lt;p&gt;All of the recordings from this event are also available in the &lt;a href=&#34;https://pages.jetbrains.com/mpstalkseries2021&#34;&gt;Jetbrains website&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
