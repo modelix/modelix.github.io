@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modelix – Architecture</title>
-    <link>/docs/architecture/</link>
+    <link>https://modelix.github.io/docs/architecture/</link>
     <description>Recent content in Architecture on Modelix</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/docs/architecture/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://modelix.github.io/docs/architecture/index.xml" rel="self" type="application/rss+xml" />
     
     
       

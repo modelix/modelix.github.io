@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modelix – News about Modelix</title>
-    <link>/blog/</link>
+    <link>https://modelix.github.io/blog/</link>
     <description>Recent content in News about Modelix on Modelix</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://modelix.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Blog: Modelix Development Update 2021.1</title>
-      <link>/blog/2021/03/04/modelix-development-update-2021.1/</link>
+      <link>https://modelix.github.io/blog/2021/03/04/modelix-development-update-2021.1/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2021/03/04/modelix-development-update-2021.1/</guid>
+      <guid>https://modelix.github.io/blog/2021/03/04/modelix-development-update-2021.1/</guid>
       <description>
         
         
@@ -31,7 +31,7 @@
 &lt;p&gt;&lt;img src=&#34;web-notation.png&#34; alt=&#34;screenshot of the web notation editor&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The implementation is not feature complete yet but should give you a good impression what&amp;rsquo;s to come in the future.&lt;/p&gt;
 &lt;h2 id=&#34;modelix-at-mps-talks&#34;&gt;Modelix at MPS Talks&lt;/h2&gt;
-&lt;p&gt;At the MPS talk series, an online event organized by itemis and JetBrains, Sascha presented modelix. The presentation includes a live demo of the collaborative features and a detailed explanation on how conflicting edits are handled as well as an overview on the modelix architecture. Check out the recording the &lt;a href=&#34;/blog/2020/12/03/modelix-in-the-mps-talk-series/&#34;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the MPS talk series, an online event organized by itemis and JetBrains, Sascha presented modelix. The presentation includes a live demo of the collaborative features and a detailed explanation on how conflicting edits are handled as well as an overview on the modelix architecture. Check out the recording the &lt;a href=&#34;https://modelix.github.io/blog/2020/12/03/modelix-in-the-mps-talk-series/&#34;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;project-bindings&#34;&gt;Project Bindings&lt;/h2&gt;
 &lt;p&gt;After many smaller contributions Federico has made a large &lt;a href=&#34;https://github.com/modelix/modelix/pull/58&#34;&gt;contribution&lt;/a&gt; improving the interoperability between modelix and MPS.&lt;/p&gt;
 &lt;p&gt;Project bindings allow you to configure connections to a modelix backend inside  of your MPS project and persist this configuration. While connections to a modelix repository where always possible, they were never persisted as part of the project. The configuration is now stored as a file along with the rest of the MPS project and can be committed as part of your normal version control workflow.&lt;/p&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Blog: Modelix goes Open Source</title>
-      <link>/blog/2020/12/03/modelix-goes-open-source/</link>
+      <link>https://modelix.github.io/blog/2020/12/03/modelix-goes-open-source/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020/12/03/modelix-goes-open-source/</guid>
+      <guid>https://modelix.github.io/blog/2020/12/03/modelix-goes-open-source/</guid>
       <description>
         
         
@@ -55,10 +55,10 @@
     
     <item>
       <title>Blog: Modelix in the MPS Talk Series</title>
-      <link>/blog/2020/12/03/modelix-in-the-mps-talk-series/</link>
+      <link>https://modelix.github.io/blog/2020/12/03/modelix-in-the-mps-talk-series/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020/12/03/modelix-in-the-mps-talk-series/</guid>
+      <guid>https://modelix.github.io/blog/2020/12/03/modelix-in-the-mps-talk-series/</guid>
       <description>
         
         

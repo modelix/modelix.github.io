@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modelix – Examples</title>
-    <link>/docs/examples/</link>
+    <link>https://modelix.github.io/docs/examples/</link>
     <description>Recent content in Examples on Modelix</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="/docs/examples/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://modelix.github.io/docs/examples/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,14 +16,14 @@
     
     <item>
       <title>Docs: Hello Entities</title>
-      <link>/docs/examples/hello-entities/</link>
+      <link>https://modelix.github.io/docs/examples/hello-entities/</link>
       <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/docs/examples/hello-entities/</guid>
+      <guid>https://modelix.github.io/docs/examples/hello-entities/</guid>
       <description>
         
         
-        &lt;p&gt;Open the entities sample as explained on the &lt;a href=&#34;/docs/examples/&#34;&gt;samples&lt;/a&gt; page.&lt;/p&gt;
+        &lt;p&gt;Open the entities sample as explained on the &lt;a href=&#34;https://modelix.github.io/docs/examples/&#34;&gt;samples&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;This sample uses a custom notation for entities designed for the web. To this end, it uses a new notation definition language. It is defined in the &lt;code&gt;web&lt;/code&gt; aspect of the &lt;code&gt;org.modelix.samples.entities&lt;/code&gt; language. If you open this aspect, you will find a &lt;code&gt;Notation&lt;/code&gt; module. Double click to edit. Here is the URL to this node: http://127.0.0.1:63320/node?ref=r%3Ac375c783-4874-43af-8c53-f088cba95e74%28org.modelix.samples.entities.web%29%2F7759120791677832452&lt;/p&gt;
 &lt;h2 id=&#34;changing-a-keyword&#34;&gt;Changing a keyword&lt;/h2&gt;
 &lt;p&gt;The simplest possible change is modifying the keyword of an &lt;code&gt;Entity&lt;/code&gt;. Currently it is &amp;ldquo;entity&amp;rdquo;, change it to something else. Rebuild the language by pressing &lt;code&gt;Ctrl-F9&lt;/code&gt;, move over to the browser and reload the entities page. The keyword should change. This is the fundamental turnaround of modifying languages.&lt;/p&gt;
