@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.81.0" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.90.1" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -22,13 +22,13 @@
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://modelix.github.io/docs/examples/hello-entities/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2021-01-15T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-01-15T15:28:46&#43;01:00" /><meta property="og:site_name" content="Modelix" />
+<meta property="article:published_time" content="2021-01-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-15T15:28:46+01:00" /><meta property="og:site_name" content="Modelix" />
 
 <meta itemprop="name" content="Hello Entities">
 <meta itemprop="description" content="Entities example
-"><meta itemprop="datePublished" content="2021-01-15T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-15T15:28:46&#43;01:00" />
+"><meta itemprop="datePublished" content="2021-01-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-15T15:28:46+01:00" />
 <meta itemprop="wordCount" content="467">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hello Entities"/>
@@ -41,8 +41,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.d9e5a57962818e88e6e0d816616d5a161faf94ea687fe0e2d2b6cff2e4a60504.css" as="style">
-<link href="/scss/main.min.d9e5a57962818e88e6e0d816616d5a161faf94ea687fe0e2d2b6cff2e4a60504.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" as="style">
+<link href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -319,7 +319,7 @@
 <h2 id="the-stuff-around-the-editor">The Stuff around the editor</h2>
 <p>If you play with the samples and tutorial, you will see various HTML pages &ldquo;around&rdquo; the core node editor. These pages are obviously also served by the web server that runs in MPS (<code>localhost:3333</code>). The pages are created through incremental transformations based on the Shadow Models framework. If you check out the <code>web</code> aspect of the <code>org.modelix.samples.entities</code> you can see two more relevant constructs.</p>
 <p>The <code>HttpPage</code> roots effectively define http endpoints. It defines a URL incl. parameters, a page title as well as the HTML page that is shown; that page is created via a transformation.</p>
-<pre><code>http page /entities/model?model=... {
+<pre tabindex="0"><code>http page /entities/model?model=... {
   path: /entities/model
   parameters: model : node&lt;Model&gt;
   title: &quot;Entities (&quot; + model.name + &quot;)&quot;

@@ -34,7 +34,7 @@
 &lt;h2 id=&#34;the-stuff-around-the-editor&#34;&gt;The Stuff around the editor&lt;/h2&gt;
 &lt;p&gt;If you play with the samples and tutorial, you will see various HTML pages &amp;ldquo;around&amp;rdquo; the core node editor. These pages are obviously also served by the web server that runs in MPS (&lt;code&gt;localhost:3333&lt;/code&gt;). The pages are created through incremental transformations based on the Shadow Models framework. If you check out the &lt;code&gt;web&lt;/code&gt; aspect of the &lt;code&gt;org.modelix.samples.entities&lt;/code&gt; you can see two more relevant constructs.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;HttpPage&lt;/code&gt; roots effectively define http endpoints. It defines a URL incl. parameters, a page title as well as the HTML page that is shown; that page is created via a transformation.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;http page /entities/model?model=... {
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http page /entities/model?model=... {
   path: /entities/model
   parameters: model : node&amp;lt;Model&amp;gt;
   title: &amp;quot;Entities (&amp;quot; + model.name + &amp;quot;)&amp;quot;

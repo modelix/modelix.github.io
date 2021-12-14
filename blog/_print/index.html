@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.81.0" /><link rel="canonical" type="text/html" href="https://modelix.github.io/blog/">
+<meta name="generator" content="Hugo 0.90.1" /><link rel="canonical" type="text/html" href="https://modelix.github.io/blog/">
 <link rel="alternate" type="application/rss&#43;xml" href="https://modelix.github.io/blog/index.xml">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -35,8 +35,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.d9e5a57962818e88e6e0d816616d5a161faf94ea687fe0e2d2b6cff2e4a60504.css" as="style">
-<link href="/scss/main.min.d9e5a57962818e88e6e0d816616d5a161faf94ea687fe0e2d2b6cff2e4a60504.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" as="style">
+<link href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -141,6 +141,16 @@ This the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-0c75fc4fdf3d895a3271c649fe1bd0ad">Modelix Update on Log4Shell</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-406f45489514223654794921ed58cef8">Modelix Development Update 2021.1</a></li>
 
 
@@ -195,6 +205,41 @@ This the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-0c75fc4fdf3d895a3271c649fe1bd0ad">Modelix Update on Log4Shell</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2021-12-14" class="text-muted">Tuesday, December 14, 2021</time>
+        
+	</div>
+	<p>A short update on the vulnerability called &ldquo;<a href="https://en.wikipedia.org/wiki/Log4Shell">Log4Shell</a>&rdquo; (CVE-2021-44228) from the modelix team:</p>
+<p>As you most likely have heard already there is a vulnerability in the popular logging framework log4j affecting many projects, especially services logging HTTP requests. For more details on the vulnerability see the log4J <a href="https://logging.apache.org/log4j/2.x/security.html">announcement</a>.</p>
+<p>Since modelix services can face the public internet you might ask yourself if you are affected when running modelix. The good news is <strong>you are not affected</strong> by Log4Shell when you are using modelix. Modelix doesn&rsquo;t use the particular versions on log4J that are vulnerable.</p>
+<p>As part of a review of our dependencies we discovered that we are in fact using log4J 1.2.17 which isn&rsquo;t affected. But log4j 1.x is end of life since 2015 and doesn&rsquo;t receive further updates. We mitigated this by <a href="https://github.com/modelix/modelix/pull/141">replacing log4j with logback</a> in the places where we used it. <a href="https://logback.qos.ch">Logback</a> is a well maintained log4j API 1.x compatible open source project. As of now we do not think any version of modelix in its default configuration is vulnerable to the known issues of log4j 1.x. The issues are affecting the SocketServer and could result in remote code execution. The modelix default configuration does not load these classes.</p>
+<h3 id="a-note-on-mps">A Note on MPS</h3>
+<p>Modelix depends on MPS for the browser based MPS editor and via projector. MPS and other IntelliJ based products from JetBrains aren&rsquo;t <a href="https://blog.jetbrains.com/blog/2021/12/13/log4j-vulnerability-and-jetbrains-products-and-services/">affected by Log4Shell</a>. MPS and the IntelliJ Platform are using log4j 1.2.17 at the moment. Similar to modelix their default configuration does not expose the vulnerable parts of log4j.</p>
+<p>JetBrains is <a href="https://youtrack.jetbrains.com/issue/IDEA-265069">actively working</a> on replacing log4j 1.x.</p>
+<p>If you have any questions feels free to reach out via the <a href="https://jetbrains-mps.slack.com/archives/C01ADCD6VSM">#modelix</a> channel in the MPS Slack.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-406f45489514223654794921ed58cef8">Modelix Development Update 2021.1</h1>
 	
 	<div class="td-byline mb-4">

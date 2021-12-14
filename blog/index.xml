@@ -14,6 +14,27 @@
     
     
     <item>
+      <title>Blog: Modelix Update on Log4Shell</title>
+      <link>https://modelix.github.io/blog/2021/12/14/modelix-update-on-log4shell/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://modelix.github.io/blog/2021/12/14/modelix-update-on-log4shell/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A short update on the vulnerability called &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/Log4Shell&#34;&gt;Log4Shell&lt;/a&gt;&amp;rdquo; (CVE-2021-44228) from the modelix team:&lt;/p&gt;
+&lt;p&gt;As you most likely have heard already there is a vulnerability in the popular logging framework log4j affecting many projects, especially services logging HTTP requests. For more details on the vulnerability see the log4J &lt;a href=&#34;https://logging.apache.org/log4j/2.x/security.html&#34;&gt;announcement&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since modelix services can face the public internet you might ask yourself if you are affected when running modelix. The good news is &lt;strong&gt;you are not affected&lt;/strong&gt; by Log4Shell when you are using modelix. Modelix doesn&amp;rsquo;t use the particular versions on log4J that are vulnerable.&lt;/p&gt;
+&lt;p&gt;As part of a review of our dependencies we discovered that we are in fact using log4J 1.2.17 which isn&amp;rsquo;t affected. But log4j 1.x is end of life since 2015 and doesn&amp;rsquo;t receive further updates. We mitigated this by &lt;a href=&#34;https://github.com/modelix/modelix/pull/141&#34;&gt;replacing log4j with logback&lt;/a&gt; in the places where we used it. &lt;a href=&#34;https://logback.qos.ch&#34;&gt;Logback&lt;/a&gt; is a well maintained log4j API 1.x compatible open source project. As of now we do not think any version of modelix in its default configuration is vulnerable to the known issues of log4j 1.x. The issues are affecting the SocketServer and could result in remote code execution. The modelix default configuration does not load these classes.&lt;/p&gt;
+&lt;h3 id=&#34;a-note-on-mps&#34;&gt;A Note on MPS&lt;/h3&gt;
+&lt;p&gt;Modelix depends on MPS for the browser based MPS editor and via projector. MPS and other IntelliJ based products from JetBrains aren&amp;rsquo;t &lt;a href=&#34;https://blog.jetbrains.com/blog/2021/12/13/log4j-vulnerability-and-jetbrains-products-and-services/&#34;&gt;affected by Log4Shell&lt;/a&gt;. MPS and the IntelliJ Platform are using log4j 1.2.17 at the moment. Similar to modelix their default configuration does not expose the vulnerable parts of log4j.&lt;/p&gt;
+&lt;p&gt;JetBrains is &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-265069&#34;&gt;actively working&lt;/a&gt; on replacing log4j 1.x.&lt;/p&gt;
+&lt;p&gt;If you have any questions feels free to reach out via the &lt;a href=&#34;https://jetbrains-mps.slack.com/archives/C01ADCD6VSM&#34;&gt;#modelix&lt;/a&gt; channel in the MPS Slack.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: Modelix Development Update 2021.1</title>
       <link>https://modelix.github.io/blog/2021/03/04/modelix-development-update-2021.1/</link>
       <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
