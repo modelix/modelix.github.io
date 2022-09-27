@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.90.1" /><link rel="canonical" type="text/html" href="https://modelix.github.io/blog/">
+<meta name="generator" content="Hugo 0.93.3" /><link rel="canonical" type="text/html" href="https://modelix.github.io/blog/">
 <link rel="alternate" type="application/rss&#43;xml" href="https://modelix.github.io/blog/index.xml">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -35,8 +35,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" as="style">
-<link href="/scss/main.min.97f24c8604dc06fcb9bdae47d02c3397575bd949378b3a7c1a5a4ba29a5c133c.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.76dee615d7089af679f4c60453f88ba9b895d890be4870290ad8f8cd6be82b83.css" as="style">
+<link href="/scss/main.min.76dee615d7089af679f4c60453f88ba9b895d890be4870290ad8f8cd6be82b83.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -141,6 +141,16 @@ This the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-da3e7d15b851897937ff6a544dba6325">Modelix Update on JetBrain&#39;s Projector</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-0c75fc4fdf3d895a3271c649fe1bd0ad">Modelix Update on Log4Shell</a></li>
 
 
@@ -205,6 +215,39 @@ This the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-da3e7d15b851897937ff6a544dba6325">Modelix Update on JetBrain&#39;s Projector</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2022-09-26" class="text-muted">Monday, September 26, 2022</time>
+        
+	</div>
+	<p>On March 11 2021 JetBrains <a href="https://blog.jetbrains.com/blog/2021/03/11/projector-is-out/">announced the initial release of Projector</a>. It can be used to run JetBrains IDEs and Swing apps remotely over the network.
+Just recently JetBrains <strong><a href="https://lp.jetbrains.com/projector/">announced the suspension of Projector as its own standalone product</a></strong>. There are components in modelix which make use of Projector so consequently the question arises how this change affects the support in contexts such as Modelix?</p>
+<p>This announcement by JetBrains might seem rather sudden. In fact, two client implementations for Projector exist, a browser based one (the now discontinued Projector) and a dedicated one called <em><a href="https://www.jetbrains.com/remote-development/gateway/">Gateway</a></em>. The browser based one has some limitations and Gateway provides the better experience (for our use cases the browser limitations are not relevant, because we do not want the full IDE experience anyways). That&rsquo;s the reason why JetBrains decided to discontinue developing the browser based one.</p>
+<p>From the perspective of modelix this announcement does not pose any problems. At the moment we simply use projector for embedding MPS editors into the browser and it is not our long term goal to keep it this way. We will be replacing these embedded editors by editor implementations that use HTML/JS and provides a better integration with other web frameworks.</p>
+<p>However, connecting to a remote MPS instance via managed by the server might still provide some benefits for language developers, but then the solution for this use case is to have a provider plugin for Gateway instead of using the browser based Projector. For now, Projector still works and is still better than our own attempts at providing a similar feature. If need be we can even maintain <a href="https://github.com/modelix?q=projector">a fork</a> for the transitional period.</p>
+<p>If you have any questions feel free to reach out via the <a href="https://jetbrains-mps.slack.com/archives/C01ADCD6VSM">#modelix</a> channel in the MPS Slack.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-0c75fc4fdf3d895a3271c649fe1bd0ad">Modelix Update on Log4Shell</h1>
 	
 	<div class="td-byline mb-4">
@@ -352,7 +395,7 @@ and itemis. In one of the most antecipated talks Sascha Lisson gave us an overvi
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2021 modelix open source project All Rights Reserved</small>
+        <small class="text-white">&copy; 2022 modelix open source project All Rights Reserved</small>
         
 	
 		<p class="mt-2"><a href="/about/">About Modelix</a></p>
@@ -380,7 +423,7 @@ and itemis. In one of the most antecipated talks Sascha Lisson gave us an overvi
 
 
 
-<script src="/js/main.min.418cf389d3b08fcf93633e007865596aed775a405b1fc28bdf6c92fc4b16b43c.js" integrity="sha256-QYzzidOwj8&#43;TYz4AeGVZau13WkBbH8KL32yS/EsWtDw=" crossorigin="anonymous"></script>
+<script src="/js/main.min.bf5a2c685a9313b6d9fcbbfc018c90966090ad8692cea3b0d7890126760a88d0.js" integrity="sha256-v1osaFqTE7bZ/Lv8AYyQlmCQrYaSzqOw14kBJnYKiNA=" crossorigin="anonymous"></script>
 
 
 

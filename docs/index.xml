@@ -37,7 +37,7 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;http page /entities/model?model=... {
   path: /entities/model
   parameters: model : node&amp;lt;Model&amp;gt;
-  title: &amp;quot;Entities (&amp;quot; + model.name + &amp;quot;)&amp;quot;
+  title: &amp;#34;Entities (&amp;#34; + model.name + &amp;#34;)&amp;#34;
   transformation: call EntitiesWebPages.entitiesPage model
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This transformation is located in &lt;code&gt;EntitiesWebPages&lt;/code&gt;, an root that contains shadow model transformations. It builds the AST of a HTML page using concepts (defined as part of the modelix project) that represent HTML. Ultimately this HTML embeds the actual editor for an MPS node (&lt;code&gt;call pages.nodeEditor _ &lt;/code&gt;). How this then exactly works will be explained later.&lt;/p&gt;
