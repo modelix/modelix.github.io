@@ -299,9 +299,11 @@ During development you can run the different components without docker/kubernete
 You need a PostgreSQL database, the model server and the MPS plugin for the UI server.</p>
 <h2 id="running-without-kubernetes">Running without kubernetes</h2>
 <ul>
-<li><code>./gradlew</code> in the root directory</li>
-<li>open the project in the folder &ldquo;mps&rdquo; with MPS 2020.1.1</li>
-<li><a href="http://localhost:33333/">http://localhost:33333/</a></li>
+<li>Clone the project on <a target="_blank" href="https://github.com/modelix/modelix">modelix </a>repository</li>
+<li>Install JAVA11.0.16 or higher. Check java and gradle compatibility matrix via <a target="_blank" href="https://docs.gradle.org/current/userguide/compatibility.html#:~:text=A%20Java%20version%20between%208,used%20for%20compile%20or%20test.">gradle.org</a></li>
+<li><code>./gradlew</code> in the root directory. If you are using Windows run via <b>cygwin</b> or <b>git bash </b> terminal.</li>
+<li>open the project in the folder &ldquo;<b>mps</b>&rdquo; with MPS</li>
+<li>Navigate to <a target="_blank" href="http://localhost:33333/">http://localhost:33333/</a></li>
 </ul>
 <p>This allows you to edit the models stored locally in MPS.
 Optionally, you can run the model server and connect your MPS to it:</p>
@@ -325,6 +327,7 @@ Optionally, you can run the model server and connect your MPS to it:</p>
 </li>
 <li>model server
 <ul>
+<li>Clone the repository on <a target="_blank" href="https://github.com/modelix/modelix.core">modelix.core</a></li>
 <li><code>cd model-server</code></li>
 <li><code>../gradlew run</code></li>
 </ul>
