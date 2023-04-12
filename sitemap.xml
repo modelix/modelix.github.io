@@ -2,14 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://modelix.github.io/docs/getting-started/</loc>
-    <lastmod>2021-03-04T16:26:25+01:00</lastmod>
-  </url><url>
-    <loc>https://modelix.github.io/docs/architecture/</loc>
-    <lastmod>2021-01-15T15:28:46+01:00</lastmod>
-  </url><url>
-    <loc>https://modelix.github.io/docs/examples/</loc>
-    <lastmod>2021-01-15T15:28:46+01:00</lastmod>
+    <loc>https://modelix.github.io/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/</loc>
+    <lastmod>2023-04-12T19:13:41+02:00</lastmod>
   </url><url>
     <loc>https://modelix.github.io/blog/2022/09/26/modelix-update-on-jetbrains-projector/</loc>
     <lastmod>2022-09-27T14:20:35+02:00</lastmod>
@@ -20,9 +14,6 @@
     <loc>https://modelix.github.io/blog/2021/03/04/modelix-development-update-2021.1/</loc>
     <lastmod>2021-03-04T16:13:13+01:00</lastmod>
   </url><url>
-    <loc>https://modelix.github.io/docs/examples/hello-entities/</loc>
-    <lastmod>2021-01-15T15:28:46+01:00</lastmod>
-  </url><url>
     <loc>https://modelix.github.io/blog/2020/12/03/modelix-goes-open-source/</loc>
     <lastmod>2021-01-15T15:28:46+01:00</lastmod>
   </url><url>
@@ -30,13 +21,10 @@
     <lastmod>2021-03-04T14:09:18+01:00</lastmod>
   </url><url>
     <loc>https://modelix.github.io/about/</loc>
-    <lastmod>2021-01-15T15:28:46+01:00</lastmod>
-  </url><url>
-    <loc>https://modelix.github.io/docs/</loc>
-    <lastmod>2021-01-15T15:28:46+01:00</lastmod>
+    <lastmod>2023-04-12T13:24:59+02:00</lastmod>
   </url><url>
     <loc>https://modelix.github.io/</loc>
-    <lastmod>2021-01-15T16:21:36+01:00</lastmod>
+    <lastmod>2023-04-12T13:24:59+02:00</lastmod>
   </url><url>
     <loc>https://modelix.github.io/blog/</loc>
     <lastmod>2021-01-15T15:28:46+01:00</lastmod>

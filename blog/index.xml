@@ -14,6 +14,227 @@
     
     
     <item>
+      <title>Blog: Modelix Artifact Re-Grouping and Re-naming </title>
+      <link>https://modelix.github.io/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://modelix.github.io/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In the last week we re-grouped and re-named several artifacts of modelix platform to more clearly convey their functionality.
+For example, the &lt;code&gt;metamodel-generator&lt;/code&gt; is now named &lt;code&gt;model-api-gen&lt;/code&gt; illustrating the fact that it generates a model API.
+Additionally, we also added correct &lt;a href=&#34;https://docs.gradle.org/current/userguide/plugins.html#sec:plugin_markers&#34;&gt;Gradle plugin markers&lt;/a&gt; to ease the usage of Gradle plugins in your build scripts.
+We also bumped the major version of all modelix core components to indicate the breaking nature this group and name change.&lt;/p&gt;
+&lt;p&gt;The following table lists all current artifacts, highlighting the changes we made in bold text.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Old Artifact Group&lt;/th&gt;
+&lt;th&gt;Old Artifact Name&lt;/th&gt;
+&lt;th&gt;New Artifact Group&lt;/th&gt;
+&lt;th&gt;New Artifact Name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-api&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-api&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;metamodel-export-mps&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;metamodel-export&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;metamodel-generator&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-api-gen&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;metamodel-runtime&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-api-gen-runtime&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;metamodel-gradle&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-api-gen-gradle&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.model-api-gen.gradle.plugin&lt;/code&gt;&lt;/strong&gt; &lt;br /&gt;(new Gradle plugin marker)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;incremental&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;incremental&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;light-model-server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-server-lib&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-server-api&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-server-api&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-server&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt; org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-server-fatjar&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-server-with-dependencies&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-client&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;model-client&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;light-model-client&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;light-model-client&lt;/code&gt;&lt;/strong&gt; &lt;br/&gt;(will soon be merged with above)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;gradle-plugin&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-download-gradle&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps.model-download&lt;/code&gt;&lt;/strong&gt; &lt;br /&gt;(new Gradle plugin marker)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;mps-model-plugin&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;model-server-sync-plugin&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix.mpsbuild&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;build-tools&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;build-tools-lib&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix.mpsbuild&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;gradle-mpsbuild-plugin&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;build-tools-gradle&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix.mpsbuild.gradle.plugin&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&amp;mdash;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps.build-tools&lt;/code&gt;&lt;/strong&gt; &lt;br /&gt;(new Gradle plugin marker)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;build-scripts&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;build-solution&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;headless-mps&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;headless-runner&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;authorization&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;authorization&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;org.modelix&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;web-editors&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;org.modelix.mps&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;code&gt;web-editors-plugin&lt;/code&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ts-model-api&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ts-model-api&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;In case you are not on the latest modelix version, we encourage you to wait just a little bit longer - we are in the process to transition to a bi-yearly release cycle.
+The first release &lt;code&gt;2023.1&lt;/code&gt; is planned to be launched with the upcoming &lt;a href=&#34;https://www.eventbrite.co.uk/e/jetbrains-mps-community-meetup-2023-tickets-516733442637&#34;&gt;MPS Meetup 20203&lt;/a&gt;.
+As a part of this we also plan to provide further documentation on the most important modelix platform components.
+Stay tuned!&lt;/p&gt;
+&lt;p&gt;If you have any questions feel free to reach out via the &lt;a href=&#34;https://jetbrains-mps.slack.com/archives/C01ADCD6VSM&#34;&gt;#modelix&lt;/a&gt; channel in the MPS Slack or via &lt;a href=&#34;mailto:modelix@itemis.com&#34;&gt;mail&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: Modelix Update on JetBrain&#39;s Projector</title>
       <link>https://modelix.github.io/blog/2022/09/26/modelix-update-on-jetbrains-projector/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
