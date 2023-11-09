@@ -17,19 +17,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Modelix Artifact Re-Grouping and Re-naming  | Modelix</title><meta property="og:title" content="Modelix Artifact Re-Grouping and Re-naming " />
-<meta property="og:description" content="In the last week we re-grouped and re-named several artifacts of modelix platform to more clearly convey their functionality. For example, the metamodel-generator is now named model-api-gen illustrating the fact that it generates a model API. Additionally, we also added correct Gradle plugin markers to ease the usage of Gradle plugins in your build scripts. We also bumped the major version of all modelix core components to indicate the breaking nature this group and name change." />
+<title>First release of the new modelix platform 23.1 | Modelix</title><meta property="og:title" content="First release of the new modelix platform 23.1" />
+<meta property="og:description" content="We are very happy to announce the first release of the modelix platform: modelix-23.1
+With many modelix components being in various development stages - from stable to early and conceptual - they are released individually for each repository. To make it easier for developers we now release a dedicated modelix platform twice a year unifying everything under a single version. This platform aggregates compatible modelix component versions. We aim to provide a Spring release and an Autumn release." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://modelix.github.io/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-04-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-12T19:13:41+02:00" /><meta property="og:site_name" content="Modelix" />
-<meta itemprop="name" content="Modelix Artifact Re-Grouping and Re-naming ">
-<meta itemprop="description" content="In the last week we re-grouped and re-named several artifacts of modelix platform to more clearly convey their functionality. For example, the metamodel-generator is now named model-api-gen illustrating the fact that it generates a model API. Additionally, we also added correct Gradle plugin markers to ease the usage of Gradle plugins in your build scripts. We also bumped the major version of all modelix core components to indicate the breaking nature this group and name change."><meta itemprop="datePublished" content="2023-04-12T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-04-12T19:13:41+02:00" />
-<meta itemprop="wordCount" content="305">
+<meta property="og:url" content="https://modelix.github.io/blog/2023/05/10/first-release-of-the-new-modelix-platform-23.1/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-05-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-09T09:02:33+01:00" /><meta property="og:site_name" content="Modelix" />
+<meta itemprop="name" content="First release of the new modelix platform 23.1">
+<meta itemprop="description" content="We are very happy to announce the first release of the modelix platform: modelix-23.1
+With many modelix components being in various development stages - from stable to early and conceptual - they are released individually for each repository. To make it easier for developers we now release a dedicated modelix platform twice a year unifying everything under a single version. This platform aggregates compatible modelix component versions. We aim to provide a Spring release and an Autumn release."><meta itemprop="datePublished" content="2023-05-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-11-09T09:02:33+01:00" />
+<meta itemprop="wordCount" content="184">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Modelix Artifact Re-Grouping and Re-naming "/>
-<meta name="twitter:description" content="In the last week we re-grouped and re-named several artifacts of modelix platform to more clearly convey their functionality. For example, the metamodel-generator is now named model-api-gen illustrating the fact that it generates a model API. Additionally, we also added correct Gradle plugin markers to ease the usage of Gradle plugins in your build scripts. We also bumped the major version of all modelix core components to indicate the breaking nature this group and name change."/>
+<meta name="twitter:title" content="First release of the new modelix platform 23.1"/>
+<meta name="twitter:description" content="We are very happy to announce the first release of the modelix platform: modelix-23.1
+With many modelix components being in various development stages - from stable to early and conceptual - they are released individually for each repository. To make it easier for developers we now release a dedicated modelix platform twice a year unifying everything under a single version. This platform aggregates compatible modelix component versions. We aim to provide a Spring release and an Autumn release."/>
 
 
 
@@ -137,7 +140,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page " id="m-blog20230510first-release-of-the-new-modelix-platform-231" href="/blog/2023/05/10/first-release-of-the-new-modelix-platform-23.1/">First release of the new modelix platform 23.1</a>
+          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-blog20230510first-release-of-the-new-modelix-platform-231" href="/blog/2023/05/10/first-release-of-the-new-modelix-platform-23.1/">First release of the new modelix platform 23.1</a>
         
       
       
@@ -145,7 +148,7 @@
         
           
           
-          <a class="td-sidebar-link td-sidebar-link__page  active" id="m-blog20230412modelix-artifact-re-grouping-and-re-naming" href="/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/">Modelix Artifact Re-Grouping and Re-naming </a>
+          <a class="td-sidebar-link td-sidebar-link__page " id="m-blog20230412modelix-artifact-re-grouping-and-re-naming" href="/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/">Modelix Artifact Re-Grouping and Re-naming </a>
         
       
       
@@ -227,229 +230,36 @@
             </a>
             
 <div class="td-content">
-	<h1>Modelix Artifact Re-Grouping and Re-naming </h1>
+	<h1>First release of the new modelix platform 23.1</h1>
 	
 	<div class="td-byline mb-4">
 		
-		<time datetime="2023-04-12" class="text-muted">Wednesday, April 12, 2023</time>
+		<time datetime="2023-05-10" class="text-muted">Wednesday, May 10, 2023</time>
 	</div>
 	
-	<p>In the last week we re-grouped and re-named several artifacts of modelix platform to more clearly convey their functionality.
-For example, the <code>metamodel-generator</code> is now named <code>model-api-gen</code> illustrating the fact that it generates a model API.
-Additionally, we also added correct <a href="https://docs.gradle.org/current/userguide/plugins.html#sec:plugin_markers">Gradle plugin markers</a> to ease the usage of Gradle plugins in your build scripts.
-We also bumped the major version of all modelix core components to indicate the breaking nature this group and name change.</p>
-<p>The following table lists all current artifacts, highlighting the changes we made in bold text.</p>
-<table>
-<thead>
-<tr>
-<th>Old Artifact Group</th>
-<th>Old Artifact Name</th>
-<th>New Artifact Group</th>
-<th>New Artifact Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>model-api</code></td>
-<td><code>org.modelix</code></td>
-<td><code>model-api</code></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>metamodel-export-mps</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>metamodel-export</code></strong></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>metamodel-generator</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>model-api-gen</code></strong></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>metamodel-runtime</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>model-api-gen-runtime</code></strong></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>metamodel-gradle</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>model-api-gen-gradle</code></strong></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td>&mdash;</td>
-<td>&mdash;</td>
-<td><strong><code>org.modelix.model-api-gen.gradle.plugin</code></strong> <br />(new Gradle plugin marker)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>incremental</code></td>
-<td><code>org.modelix </code></td>
-<td><code>incremental</code></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>light-model-server</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>model-server-lib</code></strong></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>model-server-api</code></td>
-<td><code>org.modelix </code></td>
-<td><code>model-server-api</code></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>model-server</code></td>
-<td><code>org.modelix </code></td>
-<td><code>model-server</code></td>
-</tr>
-<tr>
-<td><code> org.modelix</code></td>
-<td><code>model-server-fatjar</code></td>
-<td><code>org.modelix </code></td>
-<td><strong><code>model-server-with-dependencies</code></strong></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>model-client</code></td>
-<td><code>org.modelix</code></td>
-<td><code>model-client</code></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>light-model-client</code></td>
-<td><code>org.modelix</code></td>
-<td><strong><code>light-model-client</code></strong> <br/>(will soon be merged with above)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>gradle-plugin</code></td>
-<td><code>org.modelix</code></td>
-<td><strong><code>model-download-gradle</code></strong></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td>&mdash;</td>
-<td>&mdash;</td>
-<td><strong><code>org.modelix.mps.model-download</code></strong> <br />(new Gradle plugin marker)</td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>mps-model-plugin</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>model-server-sync-plugin</code></strong></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>org.modelix.mpsbuild</code></td>
-<td><code>build-tools</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>build-tools-lib</code></strong></td>
-</tr>
-<tr>
-<td><code>org.modelix.mpsbuild</code></td>
-<td><code>gradle-mpsbuild-plugin</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>build-tools-gradle</code></strong></td>
-</tr>
-<tr>
-<td>&mdash;</td>
-<td><code>org.modelix.mpsbuild.gradle.plugin</code></td>
-<td>&mdash;</td>
-<td><strong><code>org.modelix.mps.build-tools</code></strong> <br />(new Gradle plugin marker)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>build-scripts</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>build-solution</code></strong></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>headless-mps</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>headless-runner</code></strong></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>authorization</code></td>
-<td><code>org.modelix</code></td>
-<td><code>authorization</code></td>
-</tr>
-<tr>
-<td><code>org.modelix</code></td>
-<td><code>web-editors</code></td>
-<td><strong><code>org.modelix.mps</code></strong></td>
-<td><strong><code>web-editors-plugin</code></strong></td>
-</tr>
-<tr>
-<td></td>
-<td><code>ts-model-api</code></td>
-<td></td>
-<td><code>ts-model-api</code></td>
-</tr>
-</tbody>
-</table>
-<p>In case you are not on the latest modelix version, we encourage you to wait just a little bit longer - we are in the process to transition to a bi-yearly release cycle.
-The first release <code>2023.1</code> is planned to be launched with the upcoming <a href="https://www.eventbrite.co.uk/e/jetbrains-mps-community-meetup-2023-tickets-516733442637">MPS Meetup 20203</a>.
-As a part of this we also plan to provide further documentation on the most important modelix platform components.
-Stay tuned!</p>
+	<p>We are very happy to announce the first release of the modelix platform: <strong><code>modelix-23.1</code></strong></p>
+<p>With many modelix components being in various development stages - from stable to early and conceptual - they are released individually for each repository.
+To make it easier for developers we now release a dedicated modelix platform twice a year unifying everything under a single version.
+This platform aggregates compatible modelix component versions.
+We aim to provide a Spring release and an Autumn release.
+All development in-between is carried out as patches on the releases if necessary.
+This release cycle starts from 2023 with the first release on the MPS Community meetup in May.</p>
+<p>The versions that are bundled in this first release are:</p>
+<pre tabindex="0"><code>modelixCoreVersion = 2.4.0
+incrementalVersion = 0.1.4
+buildToolsVersion = 1.0.11
+modelixMPSPatchVersion = 145
+</code></pre><p>If you want to know how to use this platform in your Gradle build, check out the corresponding <a href="https://docs.modelix.org/modelix/main/platform/howto/usage-platform.html">Documentation</a>.</p>
+<p>The platform is published to the <a href="https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fmodelix%2Fplatform%2Fmaven-metadata.xml">itemis Nexus</a> as well as to <a href="https://github.com/orgs/modelix/packages?repo_name=modelix.platform">GitHub Packages</a>.</p>
 <p>If you have any questions feel free to reach out via the <a href="https://jetbrains-mps.slack.com/archives/C01ADCD6VSM">#modelix</a> channel in the MPS Slack or via <a href="mailto:modelix@itemis.com">mail</a>.</p>
 
 	
 
 	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
   <li>
-    <a href="/blog/2022/09/26/modelix-update-on-jetbrains-projector/" class="btn btn-primary "><span class="mr-1">←</span> Previous</a>
+    <a href="/blog/2023/04/12/modelix-artifact-re-grouping-and-re-naming/" class="btn btn-primary "><span class="mr-1">←</span> Previous</a>
   </li>
-    <a href="/blog/2023/05/10/first-release-of-the-new-modelix-platform-23.1/" class="btn btn-primary ">Next <span class="ml-1">→</span></a>
+    <a href="/blog/2023/11/02/modelix-platform-release-23.2/" class="btn btn-primary ">Next <span class="ml-1">→</span></a>
   </li>
 </ul>
 

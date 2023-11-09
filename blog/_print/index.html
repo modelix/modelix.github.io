@@ -128,6 +128,26 @@ This the multi-page printable view of this section.
     
 	
 
+    <li><a href="#pg-53babac736b1f62a7f954a26a6bae1da">Modelix Platform Release 23.2</a></li>
+
+
+
+    
+  
+    
+    
+	
+
+    <li><a href="#pg-f7cbdd253d103694bb96a19ef08eb5fb">First release of the new modelix platform 23.1</a></li>
+
+
+
+    
+  
+    
+    
+	
+
     <li><a href="#pg-9b2899fc5b74298af1369052a2b07dfe">Modelix Artifact Re-Grouping and Re-naming </a></li>
 
 
@@ -212,6 +232,142 @@ This the multi-page printable view of this section.
   
 
 <div class="td-content" style="">
+    <h1 id="pg-53babac736b1f62a7f954a26a6bae1da">Modelix Platform Release 23.2</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2023-11-02" class="text-muted">Thursday, November 02, 2023</time>
+        
+	</div>
+	<p>We are happy to announce the autumn release of the modelix platform: <strong><code>23.2</code></strong></p>
+<p>The versions bundled in this release are:</p>
+<pre tabindex="0"><code>modelixCoreVersion = 3.12.1
+incrementalVersion = 0.2.0
+buildToolsVersion = 1.1.0
+modelixMPSPatchVersion = 157
+</code></pre><p>If you want to know how to use this platform in your Gradle build, check out the corresponding <a href="https://docs.modelix.org/modelix/23.2/platform/howto/usage-platform.html">documentation</a>.</p>
+<ul>
+<li><a href="#feature-highlights">Feature Highlights</a>
+<ul>
+<li><a href="#modelql">ModelQL</a></li>
+<li><a href="#model-client-as-npm-package-experimental">Model Client as NPM Package (experimental)</a></li>
+<li><a href="#vuejs-bindings-experimental">Vue.js Bindings (experimental)</a></li>
+<li><a href="#mps-model-adapters">MPS Model Adapters</a></li>
+<li><a href="#bulk-model-synchronization-plugin-experimental">Bulk Model Synchronization Plugin (experimental)</a></li>
+</ul>
+</li>
+<li><a href="#development-insights">Development Insights</a>
+<ul>
+<li><a href="#new-approach-to-mps-related-components">New Approach to MPS-Related Components</a></li>
+<li><a href="#contribution-guide">Contribution Guide</a></li>
+<li><a href="#marking-experimental-features">Marking Experimental Features</a></li>
+<li><a href="#extending-automation">Extending Automation</a></li>
+</ul>
+</li>
+<li><a href="#whats-to-come">What&rsquo;s To Come</a></li>
+</ul>
+<h1 id="feature-highlights">Feature Highlights</h1>
+<h2 id="modelql">ModelQL</h2>
+<p>The <a href="https://docs.modelix.org/modelix/23.2/core/explanation/modelql.html">ModelQL query language</a> provides a dynamic way of loading parts of the model on demand while reducing the number of requests to a minimum.</p>
+<h2 id="model-client-as-npm-package-experimental">Model Client as NPM Package (experimental)</h2>
+<p>The previously existing <a href="https://github.com/modelix/modelix.core/tree/modelix-23.2/model-client">model client</a> is now also published as <a href="https://artifacts.itemis.cloud/service/rest/repository/browse/npm-open/%40modelix/model-client/"><code>@modelix/model-client</code> NPM package</a>.</p>
+<p>The exposed API is minimal and experimental.
+In the future, we want to make more features from the Kotlin model client directly accessible from the exposed API in the NPM package.</p>
+<h2 id="vuejs-bindings-experimental">Vue.js Bindings (experimental)</h2>
+<p>Built upon <a href="https://artifacts.itemis.cloud/service/rest/repository/browse/npm-open/%40modelix/model-client/"><code>@modelix/model-client</code></a> we created a library to interact with models through <a href="https://vuejs.org/">Vue.js</a>.</p>
+<p>With <a href="https://docs.modelix.org/modelix/23.2/core/reference/component-vue-model-api.html"><code>@modelix/vue-model-api</code></a> we are currently building sample projects with Vue.js.
+After that, we want to stabilize the API and show you how you can use it for your projects.</p>
+<h2 id="mps-model-adapters">MPS Model Adapters</h2>
+<p>We created <a href="https://github.com/modelix/modelix.core/tree/modelix-23.2/mps-model-adapters">adapters</a> between MPS and modelix.
+They forward changes made to a model through the <a href="https://docs.modelix.org/modelix/23.2/core/reference/component-model-api.html">model-api of modelix</a> to the <a href="https://www.jetbrains.com/help/mps/open-api-accessing-models-from-code.html">Open API of MPS</a>.
+They are compatible with all MPS versions that modelix currently supports.</p>
+<p>With their help, it is possible to implement access and synchronization from modelix components to MPS.
+The <a href="#bulk-model-synchronization-plugin-experimental">bulk-model-sync Gradle Plugin</a> is an example component that uses them.</p>
+<h2 id="bulk-model-synchronization-plugin-experimental">Bulk Model Synchronization Plugin (experimental)</h2>
+<p>The <a href="https://docs.modelix.org/modelix/23.2/core/reference/component-bulk-model-sync-gradle.html">bulk-model-sync Gradle Plugin</a> allows bulk synchronization of models between MPS and a <a href="https://docs.modelix.org/modelix/23.2/core/reference/component-model-server.html">model-server</a>.
+The plugin applies changes incrementally, and can be run in existing CI systems to schedule and run the synchronization in both directions.
+This way you can implement a custom Git Integration tailored to your needs.</p>
+<p>The plugin is considered unstable, but will be stabilized soon.</p>
+<h1 id="development-insights">Development Insights</h1>
+<h2 id="new-approach-to-mps-related-components">New Approach to MPS-Related Components</h2>
+<p>Up until now, we built and released MPS-specific components for each MPS version individually.
+Going forward, we want to release single components, which are compatible with all MPS versions that are currently supported by modelix.
+The first component to follow this new approach is <a href="#mps-model-adapters">mps-model-adapters</a></p>
+<p>To achieve that, we separate code in MPS solutions from support library code wherever possible.
+Also, we are developing upcoming MPS plugins as IntelliJ plugins instead of MPS plugins.
+This reduces the overhead required for updating and maintenance.</p>
+<h2 id="contribution-guide">Contribution Guide</h2>
+<p>We created a <a href="https://docs.modelix.org/modelix/main/main/contribute.html">contribution guide</a> to help new contributors.</p>
+<h2 id="marking-experimental-features">Marking Experimental Features</h2>
+<p>From now on, we mark experimental features clearly.
+You can read about it in more detail in our <a href="https://docs.modelix.org/modelix/main/main/development.html#experimental_features">documentation</a></p>
+<h2 id="extending-automation">Extending Automation</h2>
+<p>In our automation, we introduced static code analysis, dependency updating and security checking.
+This aims to increase developer velocity, reduce bugs and provide more security for our users.</p>
+<h1 id="whats-to-come">What&rsquo;s To Come</h1>
+<p>We are in the process of planning our <a href="https://docs.modelix.org/modelix/main/main/roadmap.html">roadmap</a> and are aiming to update it this year.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
+    <h1 id="pg-f7cbdd253d103694bb96a19ef08eb5fb">First release of the new modelix platform 23.1</h1>
+	
+	<div class="td-byline mb-4">
+		
+        
+		<time datetime="2023-05-10" class="text-muted">Wednesday, May 10, 2023</time>
+        
+	</div>
+	<p>We are very happy to announce the first release of the modelix platform: <strong><code>modelix-23.1</code></strong></p>
+<p>With many modelix components being in various development stages - from stable to early and conceptual - they are released individually for each repository.
+To make it easier for developers we now release a dedicated modelix platform twice a year unifying everything under a single version.
+This platform aggregates compatible modelix component versions.
+We aim to provide a Spring release and an Autumn release.
+All development in-between is carried out as patches on the releases if necessary.
+This release cycle starts from 2023 with the first release on the MPS Community meetup in May.</p>
+<p>The versions that are bundled in this first release are:</p>
+<pre tabindex="0"><code>modelixCoreVersion = 2.4.0
+incrementalVersion = 0.1.4
+buildToolsVersion = 1.0.11
+modelixMPSPatchVersion = 145
+</code></pre><p>If you want to know how to use this platform in your Gradle build, check out the corresponding <a href="https://docs.modelix.org/modelix/main/platform/howto/usage-platform.html">Documentation</a>.</p>
+<p>The platform is published to the <a href="https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fmodelix%2Fplatform%2Fmaven-metadata.xml">itemis Nexus</a> as well as to <a href="https://github.com/orgs/modelix/packages?repo_name=modelix.platform">GitHub Packages</a>.</p>
+<p>If you have any questions feel free to reach out via the <a href="https://jetbrains-mps.slack.com/archives/C01ADCD6VSM">#modelix</a> channel in the MPS Slack or via <a href="mailto:modelix@itemis.com">mail</a>.</p>
+
+</div>
+
+
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+
+  
+
+<div class="td-content" style="page-break-before: always">
     <h1 id="pg-9b2899fc5b74298af1369052a2b07dfe">Modelix Artifact Re-Grouping and Re-naming </h1>
 	
 	<div class="td-byline mb-4">
