@@ -14,17 +14,19 @@
     
     
     <item>
-      <title>Blog: Modelix Roadmap Update</title>
-      <link>https://modelix.github.io/blog/2024/02/16/modelix-roadmap-update/</link>
-      <pubDate>Fri, 16 Feb 2024 00:00:00 +0000</pubDate>
+      <title>Blog: Modelix Update on XZ Utils Backdoor</title>
+      <link>https://modelix.github.io/blog/2024/04/03/modelix-update-on-xz-utils-backdoor/</link>
+      <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://modelix.github.io/blog/2024/02/16/modelix-roadmap-update/</guid>
+      <guid>https://modelix.github.io/blog/2024/04/03/modelix-update-on-xz-utils-backdoor/</guid>
       <description>
         
         
-        &lt;p&gt;As promised previously, we reviewed our roadmap and updated it.
-You can find it in our documentation page over at &lt;a href=&#34;https://docs.modelix.org/modelix/main/main/roadmap.html&#34;&gt;https://docs.modelix.org/modelix/main/main/roadmap.html&lt;/a&gt;
-We are in the process of planning our &lt;a href=&#34;https://docs.modelix.org/modelix/main/main/roadmap.html&#34;&gt;roadmap&lt;/a&gt; and are aiming to update it this year.&lt;/p&gt;
+        &lt;p&gt;Modelix images are not affected by the &lt;a href=&#34;https://en.wikipedia.org/wiki/XZ_Utils_backdoor&#34;&gt;XZ Utils backdoor&lt;/a&gt; (CVE-2021-44228).&lt;/p&gt;
+&lt;p&gt;Our images have versions of &lt;code&gt;liblzma&lt;/code&gt; ranging from &lt;code&gt;5.2.2&lt;/code&gt; to &lt;code&gt;5.4.1&lt;/code&gt;.
+So no image has the vulnerable version &lt;code&gt;5.6.0&lt;/code&gt; or &lt;code&gt;5.6.1&lt;/code&gt;.
+Also, no image has an SSH server installed.&lt;/p&gt;
+&lt;p&gt;If you have any questions, feel free to reach out via the &lt;a href=&#34;https://jetbrains-mps.slack.com/archives/C01ADCD6VSM&#34;&gt;#modelix&lt;/a&gt; channel in the MPS Slack.&lt;/p&gt;
 
       </description>
     </item>
