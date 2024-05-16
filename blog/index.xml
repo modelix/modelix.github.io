@@ -14,6 +14,67 @@
     
     
     <item>
+      <title>Blog: Modelix Platform Release 24.1</title>
+      <link>https://modelix.github.io/blog/2024/05/16/modelix-platform-release-24.1/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://modelix.github.io/blog/2024/05/16/modelix-platform-release-24.1/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Version &lt;strong&gt;&lt;code&gt;24.1&lt;/code&gt;&lt;/strong&gt; of the modelix platform is out now!
+The platform is now independent of the MPS version and works with all supported MPS versions.
+Simply use &lt;code&gt;org.modelix:platform:24.1.0&lt;/code&gt; in your build scripts.&lt;/p&gt;
+&lt;p&gt;The versions bundled in this release are:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;modelixCoreVersion = 7.3.0
+incrementalVersion = 0.2.0
+buildToolsVersion = 1.5.0
+mpsPluginsVersion = 0.7.1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A more detailed list of the components is available &lt;a href=&#34;https://github.com/modelix/modelix.platform/blob/docs/release/24.1/gradle/libs.versions.toml&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to know how to use this platform in your Gradle build, check out the &lt;a href=&#34;https://docs.modelix.org/modelix/24.1/platform/howto/usage-platform.html&#34;&gt;corresponding usage documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#feature-highlights&#34;&gt;Feature Highlights&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#support-for-newer-mps-versions&#34;&gt;Support for newer MPS Versions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#stabilization-of-the-bulk-model-synchronization-plugin&#34;&gt;Stabilization of the Bulk Model Synchronization Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#experimental-features&#34;&gt;Experimental Features&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#mps-sync-plugin-experimental&#34;&gt;MPS Sync Plugin (experimental)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#new-adapter-for-the-lionweb-bulk-api-experimental&#34;&gt;New Adapter for the LionWeb Bulk API (experimental)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#whats-next&#34;&gt;What&amp;rsquo;s next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;feature-highlights&#34;&gt;Feature Highlights&lt;/h1&gt;
+&lt;h2 id=&#34;support-for-newer-mps-versions&#34;&gt;Support for newer MPS Versions&lt;/h2&gt;
+&lt;p&gt;Modelix components are now compatible with MPS 2021.1 - 2023.2.
+To reduce the required maintenance effort, we decided to drop support for MPS 2020.3.
+While some use cases might still work with 2020.3, we highly recommend using a more recent MPS version.&lt;/p&gt;
+&lt;h2 id=&#34;stabilization-of-the-bulk-model-synchronization-plugin&#34;&gt;Stabilization of the Bulk Model Synchronization Plugin&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://docs.modelix.org/modelix/24.1/core/reference/component-bulk-model-sync-gradle.html&#34;&gt;bulk-model-sync Gradle plugin&lt;/a&gt; allows the bulk synchronization of models between MPS and a &lt;a href=&#34;https://docs.modelix.org/modelix/24.1/core/reference/component-model-server.html&#34;&gt;model-server&lt;/a&gt;.
+The plugin is now stable.
+However, we will continue to improve its performance in the future.&lt;/p&gt;
+&lt;h1 id=&#34;experimental-features&#34;&gt;Experimental Features&lt;/h1&gt;
+&lt;h2 id=&#34;mps-sync-plugin-experimental&#34;&gt;MPS Sync Plugin (experimental)&lt;/h2&gt;
+&lt;p&gt;A new Kotlin-based MPS Sync Plugin is in the making, which will allow you to bind local MPS repositories to remote model-server repositories.
+You will be able to seamlessly exchange model data between MPS and the model-server in an interactive fashion.
+Changes performed on one side will be automatically synchronized to the other side.
+For non-interactive workflows like CI tasks use the &lt;a href=&#34;https://docs.modelix.org/modelix/24.1/core/reference/component-bulk-model-sync-gradle.html&#34;&gt;bulk-model-sync Gradle plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;new-adapter-for-the-lionweb-bulk-api-experimental&#34;&gt;New Adapter for the LionWeb Bulk API (experimental)&lt;/h2&gt;
+&lt;p&gt;If you are interested in the integration of other modeling technologies than MPS then check out the &lt;a href=&#34;https://lionweb.io/&#34;&gt;LionWeb&lt;/a&gt; initiative (short for Language Interfaces on the web).
+The modelix team co-authored and is involved with LionWeb.&lt;/p&gt;
+&lt;p&gt;A first version of the &lt;a href=&#34;https://github.com/LionWeb-io/lionweb-modelix-adapter&#34;&gt;lionweb-modelix-adapter&lt;/a&gt; has been made available on the LionWeb GitHub.
+It allows using the model-server with the LionWeb Bulk API, but comes with limitations detailed in the README.
+We recommend using the modelix model-api to make use of advanced model-server features such as real-time collaboration.&lt;/p&gt;
+&lt;h1 id=&#34;whats-next&#34;&gt;What&amp;rsquo;s next&lt;/h1&gt;
+&lt;p&gt;Keep an eye on our new &lt;a href=&#34;https://www.linkedin.com/company/modelixweb/&#34;&gt;Modelix LinkedIn Page&lt;/a&gt;, where we are regularly sharing Modelix-related content including additional development insights.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: Modelix Update on XZ Utils Backdoor</title>
       <link>https://modelix.github.io/blog/2024/04/03/modelix-update-on-xz-utils-backdoor/</link>
       <pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate>
